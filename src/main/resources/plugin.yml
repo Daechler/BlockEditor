@@ -1,0 +1,24 @@
+name: BlockEditor
+version: '${project.version}'
+main: net.daechler.blockeditor.BlockEditor
+api-version: 1.19
+authors: [Daechler]
+description: Edit the blocks you are looking at.
+commands:
+  replaceblock:
+    description: Replaces the block the player is looking at with the specified material.
+    usage: /replaceblock <material>
+    permission: blockeditor.replaceblock
+    aliases: rb
+
+  deleteblock:
+    description: Deletes the block the player is looking at.
+    usage: /deleteblock
+    permission: blockeditor.deleteblock
+    aliases: db
+
+  addblock:
+    description: Adds the specified material on the surface of the block the player is looking at.
+    usage: /addblock <material>
+    permission: blockeditor.addblock
+    aliases: ab
